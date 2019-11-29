@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>DOM</title>
+  <style>
+  body{
+    background: #2587d8c9;
+    color: #fff;
+    font:normal 16pt consolas;
+  }
+  
+  </style>
+</head>
+<body>
+  <h1>Iniciando Estudos com DOM</h1>
+  <p>Aqui vai o resultado</p>
+  <p>Aprendendo a usar o <strong> DOM </strong>em Javascript</p>
+  <div id="msg">Clique em min</div>
+</body>
+<script>
+  var p1 = window.document.getElementsByTagName('p')[1]
+  window.document.write('Está esctito Assim ' + p1.innerText)
+
+  var d = window.document.getElementsById('msg')
+  d.style.background = 'green'
+  d.innerText = 'Estou aguardadando...'
+//window.document.write(window.document.URL)
+
+//selecionando 
+//Por Marca - getElementsByTagName()
+// por Id 
+// por Nome g
+// por Classe
+// por Seletor
+</script>
+</html>
